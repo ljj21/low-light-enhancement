@@ -16,7 +16,7 @@ def get_bounds(x, Max, distance=3):
     returns the lower and upper bound of the given position with distance
     """
     x_min = max(x - distance, 0)
-    x_max = min(x + distance, Max)
+    x_max = min(x + distance + 1, Max)
     return x_min, x_max
 
 def esti_dark_channel(img, H, W, D=3):
